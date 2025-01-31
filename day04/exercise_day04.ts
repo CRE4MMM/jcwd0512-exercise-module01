@@ -20,7 +20,7 @@ console.log(fizzbuzz(15));
 console.log(fizzbuzz(25));
 
 
-
+// 3.
 function b(w:number, h:number) {
     const bmi = w / (h * h);
     if (bmi < 18.5) {
@@ -41,3 +41,24 @@ console.log(b(50, 1.85));
 console.log(b(100, 1.95));
 console.log(b(100, 1.75));
 console.log(b(180, 1.85));
+
+
+// 4.
+function removeNumber(arr: number[]) {
+    return arr.filter(function(numbers) {
+        return numbers % 2 === 0;
+    });
+}
+
+const numbers = [1, 5, 2, 4, 3, 7, 6, 8, 9, 10];
+const evenNumber = removeNumber(numbers);
+console.log(evenNumber);
+
+
+// 5.
+function splitString(str: string): string[] {
+    return str.split(" ");
+}
+
+const res = splitString("Hello World");
+console.log(res);
